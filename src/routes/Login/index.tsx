@@ -7,7 +7,7 @@ export function Login() {
 
       <main className="flex-grow flex justify-center items-center">
         <div className="w-1/2 flex flex-col justify-center items-center">
-          <h1 className="pb-10 font-orkneyMd text-2xl text-black">
+          <h1 className="mb-16 font-orkneyMd text-2xl text-black">
             Bem-vindo de volta
           </h1>
 
@@ -18,6 +18,19 @@ export function Login() {
           </div>
 
           <Button classes="mt-5">Entrar</Button>
+
+          <Button classes="mt-10 font-orkney w-auto rounded-full flex items-center flex-row">
+            <div className="bg-white rounded-full h-10 w-10 m-1" />
+            <p className="text-white text-md font-orkneyMd ml-auto mr-auto px-4">
+              Sign in with Google
+            </p>
+          </Button>
+
+          <div className="w-[130%] h-[1px] my-10 bg-gray-dark" />
+
+          <Button classes="mt-5 bg-transparent text-primary font-orkney border border-primary">
+            Criar uma nova conta
+          </Button>
         </div>
       </main>
     </div>
