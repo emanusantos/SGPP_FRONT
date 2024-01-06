@@ -8,7 +8,12 @@ const fallback = (
   </div>
 );
 
-const Login = loadable(() => import("./routes"), {
+const NotFound = loadable(() => import("./routes/NotFound"), {
+  resolveComponent: (component) => component.NotFound,
+  fallback,
+});
+
+const Login = loadable(() => import("./routes/Login"), {
   resolveComponent: (component) => component.Login,
   fallback,
 });
@@ -17,6 +22,10 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to="login" />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
   {
     path: "/login",
