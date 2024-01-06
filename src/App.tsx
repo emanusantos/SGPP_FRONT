@@ -3,7 +3,9 @@ import { Button } from "./components";
 function App() {
   return (
     <>
-      <Button />
+      <div className="p-10 w-52">
+        <Button>Entrar</Button>
+      </div>
     </>
   );
 }

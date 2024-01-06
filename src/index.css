@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Orkney-Bold";
+  src: local("Orkney-Bold"),
+    url("./assets/fonts/Orkney-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Orkney-Light";
+  src: local("Orkney-Light"),
+    url("./assets/fonts/Orkney-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Orkney-Medium";
+  src: local("Orkney-Medium"),
+    url("./assets/fonts/Orkney-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Orkney-Regular";
+  src: local("Orkney-Regular"),
+    url("./assets/fonts/Orkney-Regular.otf") format("opentype");
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
