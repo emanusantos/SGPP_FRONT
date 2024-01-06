@@ -22,7 +22,7 @@ export function Login() {
           <Button classes="mt-10 font-orkney w-auto rounded-full flex items-center flex-row">
             <div className="bg-white rounded-full h-10 w-10 m-1" />
             <p className="text-white text-md font-orkneyMd ml-auto mr-auto px-4">
-              Sign in with Google
+              Entrar com Google
             </p>
           </Button>
 
