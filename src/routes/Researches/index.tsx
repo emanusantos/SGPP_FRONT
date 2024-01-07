@@ -31,7 +31,19 @@ export function Researches() {
         title="Suas pesquisas"
         subtitle="Essas são as pesquisas que você colabora. Escolha uma das opções ou crie um nova para continuar."
       >
-        <Button className="w-auto py-3 px-5">+ Nova pesquisa</Button>
+        <div className="flex items-end gap-6">
+          <div className="flex flex-col gap-2">
+            <p className="font-orkneyLight text-xs">
+              Atual: Comunicação Social (COS)
+            </p>
+
+            <Button className="w-auto py-3 px-10 bg-transparent text-black font-orkney border border-primary">
+              Mudar time
+            </Button>
+          </div>
+
+          <Button className="w-auto py-3 px-5">+ Nova pesquisa</Button>
+        </div>
       </PageSubheader>
 
       <PageMain className="flex flex-col gap-12">
