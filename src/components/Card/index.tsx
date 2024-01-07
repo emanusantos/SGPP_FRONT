@@ -13,7 +13,7 @@ export function Card({
     <div
       {...props}
       className={twMerge(
-        "flex flex-col flex-shrink basis-[31%] pt-11 pb-4 pl-7 gap-7 rounded-lg border border-primary bg-white min-h-72",
+        "flex flex-col flex-shrink basis-[31%] pt-11 pb-4 pl-7 gap-7 rounded-lg border border-primary bg-white min-h-72 cursor-pointer",
         className
       )}
     >
