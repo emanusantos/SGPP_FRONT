@@ -13,7 +13,7 @@ export function NotFound() {
 
         <h1 className="font-orkneyBold text-3xl">Página não encontrada</h1>
 
-        <Button classes="w-1/6 mt-20" onClick={goBack}>
+        <Button className="w-1/6 mt-20" onClick={goBack}>
           Voltar
         </Button>
       </div>
