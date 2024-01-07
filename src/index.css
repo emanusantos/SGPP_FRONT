@@ -44,3 +44,17 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .h1 {
+    @apply font-orkneyBold text-[2rem] text-black;
+  }
+
+  .h2 {
+    @apply font-orkneyMd text-2xl text-black;
+  }
+
+  .subtitle {
+    @apply font-orkney text-base text-black;
+  }
+}

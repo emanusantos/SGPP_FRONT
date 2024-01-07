@@ -1,10 +1,14 @@
+import { twMerge } from "tailwind-merge";
 import { ButtonProps } from "./types";
 
-export function Button({ classes = "", children, ...props }: ButtonProps) {
+export function Button({ className, children, ...props }: ButtonProps) {
   return (
     <button
-      className={`outline-none rounded-lg bg-primary text-white h-12 font-orkneyBold w-full ${classes}`}
       {...props}
+      className={twMerge(
+        "outline-none rounded-lg bg-primary text-white h-12 font-orkneyBold w-full",
+        className
+      )}
     >
       {children}
     </button>

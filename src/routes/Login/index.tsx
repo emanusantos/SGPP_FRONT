@@ -17,9 +17,9 @@ export function Login() {
             <Input type="password" placeholder="Digite a sua senha" />
           </div>
 
-          <Button classes="mt-5">Entrar</Button>
+          <Button className="mt-5">Entrar</Button>
 
-          <Button classes="mt-10 font-orkney w-auto rounded-full flex items-center flex-row">
+          <Button className="mt-10 font-orkney w-auto rounded-full flex items-center flex-row">
             <div className="bg-white rounded-full h-10 w-10 m-1" />
             <p className="text-white text-md font-orkneyMd ml-auto mr-auto px-4">
               Entrar com Google
@@ -28,7 +28,7 @@ export function Login() {
 
           <div className="w-[130%] h-[1px] my-10 bg-gray-dark" />
 
-          <Button classes="mt-5 bg-transparent text-primary font-orkney border border-primary">
+          <Button className="mt-5 bg-transparent text-black font-orkney border border-primary">
             Criar uma nova conta
           </Button>
         </div>
