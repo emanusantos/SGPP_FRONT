@@ -29,14 +29,10 @@ export function Card({
         </p>
 
         <div className="flex">
-          {pictures.map((picture, index) => (
-            <img
-              key={index}
-              src={picture}
-              className={`w-9 h-9 rounded-full ml-[-${
-                pictures.length > 1 ? (pictures.length - 1) * 10 : 0
-              }px]`}
-            />
+          {pictures.slice(0, 3).map((picture, index) => (
+            <div key={index} className={`w-9 h-9 -ml-[20px]`}>
+              <img src={picture} className="rounded-full" />
+            </div>
           ))}
         </div>
       </div>

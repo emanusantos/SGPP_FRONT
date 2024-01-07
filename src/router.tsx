@@ -23,6 +23,11 @@ const Teams = loadable(() => import("./routes/Teams"), {
   fallback,
 });
 
+const Researches = loadable(() => import("./routes/Researches"), {
+  resolveComponent: (component) => component.Researches,
+  fallback,
+});
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -37,7 +42,11 @@ export const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/teams",
+    path: "/times",
     element: <Teams />,
+  },
+  {
+    path: "/pesquisas",
+    element: <Researches />,
   },
 ]);
