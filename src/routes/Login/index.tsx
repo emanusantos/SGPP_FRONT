@@ -28,7 +28,7 @@ export function Login() {
 
           <div className="w-[130%] h-[1px] my-10 bg-gray-dark" />
 
-          <Button classes="mt-5 bg-transparent text-primary font-orkney border border-primary">
+          <Button classes="mt-5 bg-transparent text-black font-orkney border border-primary">
             Criar uma nova conta
           </Button>
         </div>
