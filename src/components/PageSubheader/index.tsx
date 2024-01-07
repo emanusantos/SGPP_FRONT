@@ -7,7 +7,7 @@ export function PageSubheader({
   ...props
 }: PageSubheaderProps) {
   return (
-    <div className="flex justify-between p-16 bg-white" {...props}>
+    <div className="flex justify-between items-center p-16 bg-white" {...props}>
       <div className="flex flex-col gap-4">
         <h1 className="h1">{title}</h1>
 
