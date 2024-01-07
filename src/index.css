@@ -47,6 +47,10 @@ body {
 
 @layer components {
   .h1 {
-    @apply font-orkneyBold text-[2rem];
+    @apply font-orkneyBold text-[2rem] text-black;
+  }
+
+  .subtitle {
+    @apply font-orkney text-base text-black;
   }
 }
