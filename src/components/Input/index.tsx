@@ -4,11 +4,13 @@ import { InputProps } from "./types";
 import { twMerge } from "tailwind-merge";
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ error, label, className, ...props }, ref) => {
+  ({ error, label, className, containerClasses = "", ...props }, ref) => {
     return (
       <div>
-        <div className="relative">
-          {!!label && <p className="label">{label}</p>}
+        <div
+          className={twMerge("relative flex flex-col gap-2", containerClasses)}
+        >
+          {!!label && <p className="text-black font-orkney text-xs">{label}</p>}
           <input
             ref={ref}
             {...props}
