@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import { PageHeaderProps } from "./types";
+import { MockPictureOne } from "@assets/images";
 
 export function PageHeader({ className, ...props }: PageHeaderProps) {
   return (
@@ -12,7 +13,9 @@ export function PageHeader({ className, ...props }: PageHeaderProps) {
     >
       <h1 className="h1 text-white">Logo</h1>
 
-      <div className="w-[2.6875rem] h-[2.6875rem] rounded-full bg-white" />
+      <div className="w-[2.6875rem] h-[2.6875rem] rounded-full bg-white">
+        <img src={MockPictureOne} className="rounded-full p-[1px]" />
+      </div>
     </header>
   );
 }

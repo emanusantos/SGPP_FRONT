@@ -11,6 +11,7 @@ import {
   PageMain,
   PageSubheader,
 } from "@components";
+import { useNavigate } from "react-router-dom";
 
 const TeamsMock = [
   {
@@ -38,6 +39,10 @@ const TeamsMock = [
 ];
 
 export function Teams() {
+  const navigate = useNavigate();
+
+  const onClickNewTeam = () => navigate("criar");
+
   return (
     <div className="flex flex-col min-h-dvh">
       <PageHeader />
@@ -47,7 +52,9 @@ export function Teams() {
         subtitle="Esses são os times que você pertence. Escolha uma das opções ou crie um
           novo para continuar."
       >
-        <Button className="w-auto py-3 px-5">+ Novo time</Button>
+        <Button className="w-auto py-3 px-5" onClick={onClickNewTeam}>
+          + Novo time
+        </Button>
       </PageSubheader>
 
       <PageMain className="flex flex-col gap-12">
